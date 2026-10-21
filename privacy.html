@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KL Travel Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* Layout: one reading column like a boarding-pass stub, with the data-flow table as the one wide object. */
+:root {
+  --bg: #f6f8f9;
+  --surface: #ffffff;
+  --fg: #1b2a33;
+  --muted: #55666f;
+  --line: #d6dee2;
+  --accent: #0f6e78;
+  --accent-soft: #e2f1f2;
+  --display: "Literata", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10181d; --surface: #172228; --fg: #e3eaed; --muted: #9aabb3;
+    --line: #2a3a42; --accent: #5cc2cb; --accent-soft: #163338; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10181d; --surface: #172228; --fg: #e3eaed; --muted: #9aabb3;
+  --line: #2a3a42; --accent: #5cc2cb; --accent-soft: #163338; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 56px;
+}
+main { max-width: 46rem; margin: 0 auto; display: flex; flex-direction: column; gap: 36px; }
+header { display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--display); font-weight: 650; font-size: clamp(30px, 6vw, 42px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 14px; margin: 0; }
+.meta code { font-family: var(--mono); font-size: 13px; }
+section { display: flex; flex-direction: column; gap: 12px; }
+h2 { font-family: var(--display); font-weight: 650; font-size: 22px; line-height: 1.3; margin: 0; text-wrap: balance; }
+p { margin: 0; max-width: 65ch; }
+ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; max-width: 65ch; }
+.short { background: var(--accent-soft); border-radius: 10px; padding: 20px 22px; }
+.short h2 { font-size: 18px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+tr:last-child td { border-bottom: 0; }
+th { font-family: var(--mono); font-weight: 400; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td:first-child { font-weight: 600; white-space: nowrap; }
+.path { font-family: var(--mono); font-size: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; white-space: nowrap; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
+</style>
+</head><body>
+<main>
+<header>
+<span class="eyebrow">KL Travel · Android</span>
+<h1>Privacy policy</h1>
+<p class="meta">Effective October 21, 2026 · package <code>com.kl.travel</code> · developer KL Ventures</p>
+</header>
+<section class="short">
+<h2>The short version</h2>
+<ul><li>KL Travel has no server and no user accounts of its own. Your trips, settings, email passwords and documents stay on your phone.</li><li>The app talks directly to the services you set up (your Google Sheet, your email, Google Maps and the others listed below). Only the data each feature needs is sent, and only to that service.</li><li>The free version shows Google AdMob ads. Ads are the only third party that receives data you did not choose to send.</li><li>There is no analytics or tracking SDK. Crash reports stay on your phone unless you choose to share one.</li></ul>
+</section>
+<section>
+<h2>What the app stores on your phone</h2>
+<ul><li>Your trips, events, lodging, expenses and settings.</li><li>API keys you enter (Google Maps, flight status, Claude), kept in the app's private storage.</li><li>Email account details for the email import, with passwords encrypted on the device.</li><li>Receipt photos and expenses. Receipt text is read on your phone with Google ML Kit's on-device text recognition; the photos are never uploaded.</li><li>Documents and photos you add to the Vault, behind your screen lock.</li><li>A crash report, if the app crashes (see below).</li></ul>
+<p>Uninstalling the app deletes all of it. Android cloud backup of the app's data is turned off. The in-app Backup feature saves a file only where you choose (for example your own Google Drive or Files). Email passwords and Google sign-in are never included in a backup.</p>
+</section>
+<section>
+<h2>What is sent, and to whom</h2>
+<p>Each item is sent only when you use the feature it belongs to.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Feature</th><th scope="col">Sent to</th><th scope="col">What is sent</th></tr></thead><tbody><tr><td>Your trip sheet</td><td>Google (Sheets, Drive)</td><td>Reads the trip sheet whose link you paste; when you add or edit entries, writes rows to your own sheet using your Google sign-in</td></tr><tr><td>Maps, routes, place photos</td><td>Google Maps Platform, with your own API key</td><td>Addresses and place names from your trip; your location only when you pick "My location" as the starting point</td></tr><tr><td>Flight status</td><td>AeroDataBox (RapidAPI) or aviationstack, with your own key</td><td>Flight numbers and dates</td></tr><tr><td>Weather</td><td>Open-Meteo</td><td>Trip locations and dates</td></tr><tr><td>Currency converter</td><td>Frankfurter, ExchangeRate-API</td><td>Currency codes only</td></tr><tr><td>Email import</td><td>Your email provider (Gmail via IMAP, Outlook via Microsoft Graph, or the IMAP server you enter)</td><td>Your sign-in, to read recent emails. Read-only: nothing is sent, deleted or changed</td></tr><tr><td>Claude email reading (optional)</td><td>Anthropic, with your own Claude API key</td><td>The text of a booking email that none of the built-in rules recognize</td></tr><tr><td>Transport photos</td><td>Wikimedia Commons</td><td>Aircraft or vehicle names</td></tr><tr><td>Pro purchase</td><td>Google Play Billing</td><td>Handled entirely by Google Play</td></tr><tr><td>Giveaway codes</td><td>The KL Travel code checker (a Google Apps Script)</td><td>The code you type, to mark it used</td></tr><tr><td>Ads (free version)</td><td>Google AdMob</td><td>See below</td></tr><tr><td>Manage booking and seat-map links</td><td>Airline, hotel and seat-map websites</td><td>Nothing; the links open in your browser, where those sites' own policies apply</td></tr></tbody></table></div>
+<p>These services handle your data under their own privacy policies. The developer never receives, sells or shares your data.</p>
+</section>
+<section>
+<h2>Ads</h2>
+<p>The free version shows banner ads from Google AdMob. AdMob may collect device information, such as the advertising ID, IP address and app activity, to show and measure ads. If you are in the EEA, the UK or Switzerland, the app asks for your consent before any ad is requested, and you can change your choice at any time in <span class="path">More › Settings › About › Privacy choices (ads)</span>. Buying Pro removes ads completely, and no ad requests are made after that. Google's policy: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+</section>
+<section>
+<h2>Location</h2>
+<p>Location is used only when you pick "My location" as the starting point on an event, to work out routes and leave-by times from where you are. It is sent only to Google's routing service for that purpose and is not stored.</p>
+</section>
+<section>
+<h2>Permissions</h2>
+<ul><li>Location (precise and approximate): optional, only for "My location" as a starting point.</li><li>Notifications: optional, for leave-now and flight alerts the app creates on your phone.</li><li>Internet and network state: to reach the services above.</li></ul>
+</section>
+<section>
+<h2>Crash reports</h2>
+<p>If the app crashes, a description of the error (the app version, the phone model and Android version, and the technical error) is saved on your phone. It is never sent automatically. You can share it from <span class="path">More › Settings › About</span>, using the app you choose, or delete it there.</p>
+</section>
+<section>
+<h2>Children</h2>
+<p>KL Travel is not directed at children under 13 and does not knowingly collect information from them.</p>
+</section>
+<section>
+<h2>Your choices</h2>
+<ul><li>Each feature is off until you set it up, and you can remove any key, email account or sheet in Settings.</li><li>You can change ad consent in Settings, or remove ads with Pro.</li><li>You can delete everything by clearing the app's data or uninstalling it.</li></ul>
+</section>
+<footer><p>If this policy changes, the new version will ship inside the app and its effective date will change. Questions: poleman16ft@gmail.com</p></footer>
+</main>
+</body></html>
